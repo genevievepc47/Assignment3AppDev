@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.Spinner;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -25,7 +26,15 @@ public class ColorActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view,
                                        int position, long id) {
+                //change color of layout background
                 findViewById(R.id.mainActivity).setBackgroundColor(Color.parseColor(colors[position]));
+
+                //change color of selected text view to white
+                TextView textView = (TextView)parent.getChildAt(0);
+                textView.setBackgroundColor(Color.parseColor("white"));//CRASHES PROGRAM
+
+
+
 
             }
 

@@ -7,7 +7,7 @@ import android.widget.Spinner;
 
 public class ColorActivity extends AppCompatActivity {
 
-    String[] colors = {"red", "blue", "green", "black", "gray", "cyan", "magenta", "yellow", "lightgray", "darkgray", "aqua", "fuchsia"}
+    String[] colors = {"red", "blue", "green", "black", "gray", "cyan", "magenta", "yellow", "lightgray", "darkgray", "aqua", "fuchsia"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
